@@ -17,16 +17,16 @@ describe("About Arrays", function() {
 
   it("should understand array literals", function () {
     var array = [];
-    expect(array).toEqual([]);
+    expect(array).toEqual([]); //empty array
 
     array[0] = 1;
     expect(array).toEqual([1]);
 
     array[1] = 2;
-    expect(array).toEqual([1, FILL_ME_IN]);
+    expect(array).toEqual([1, 2]);
 
     array.push(3);
-    expect(array).toEqual(FILL_ME_IN);
+    expect(array).toEqual([1,2,3]);
   });
 
   it("should understand array length", function () {
